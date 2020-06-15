@@ -1,0 +1,11 @@
+.logo {
+    padding-bottom: 30px;
+   
+}
+
+.formCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
