@@ -1,7 +1,6 @@
 import React from 'react'
-import {Container} from './Style'
+import {Container, Content} from './Style'
 import Header  from '../../components/header/Header'
-import Content from '../../components/content/Content'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
 
@@ -9,14 +8,14 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
 
 
-function Home() {
+function Home(props) {
     return (
 
         <Container>
-            <BrowserRouter>
                 <Header/>
-                <Content/>
-            </BrowserRouter>         
+                <Content>
+                    {props.children}
+                </Content>     
         </Container>
            
     )

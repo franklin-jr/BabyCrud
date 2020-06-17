@@ -1,26 +1,17 @@
 import React from 'react'
 import {Container } from './Style'
-import { Route, Switch, Router } from 'react-router'
+import { Route, Switch, BrowserRouter } from 'react-router-dom'
 import  ListUser from '../listUser/List'
 import  CadUser from '../cadUser/CadUser'
 import { history } from '../../routes/history'
 
 
 
-function Content () {
+function Content (props) {
     return (
       
             <Container>
-                <div>Teste
-                
-                    <Switch>
-                        <Route path="user" component={ListUser}/>
-                        <Route  path="caduser" component={CadUser}/>
-                    </Switch>
-               
-                </div>
-              
-               
+                {props.children}       
             </Container>
      
     )

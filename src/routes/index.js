@@ -7,9 +7,6 @@ import { PrivateRoute } from './privates'
 import { useSelector } from 'react-redux';
 import CadUser from '../components/cadUser/CadUser'
 import ListUser from '../components/listUser/List'
-import Header2 from '../components/header/Header'
-
-
 
 
 
@@ -20,10 +17,15 @@ function Routes () {
         <Router history={history}>
             <Switch>
                 <Route exact path="/login" component={Login}/>
-                <Route exact path="/" component={Home}/>
-
-                {/*  <PrivateRoute exact path="/" component={Home} isAuth={isAuth} />  */}
-                <Redirect from="*" to="/login" />
+                    <Home>
+                        <PrivateRoute isAuth={isAuth} component={({ match }) =>
+                            <div>
+                                <Route exact path='/list' component={ListUser} />
+                                <Route exact path='/caduser' component={CadUser} /> 
+                            </div>
+                        }/>
+                    </Home>
+                    <Redirect from="*" to="/login" />
             </Switch>
         </Router>
     )

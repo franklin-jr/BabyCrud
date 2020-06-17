@@ -55,7 +55,7 @@ function Header () {
 
                 <Popup
                 trigger={
-                    <Link to="user">
+                    <Link to="list">
                         <ButtonRound color='#5188e2' size='40'>
                             <FaListUl color='white' size='20'/>
                         </ButtonRound>
