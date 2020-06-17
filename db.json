@@ -1,0 +1,32 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Jose",
+      "cpf": "12345678920",
+      "email": "jose@teste.com",
+      "password": "102030",
+      "endereco": {
+        "cep": 13454000,
+        "rua": "Cabral sobrinho",
+        "numero": 785,
+        "bairro": "Rosa dos ventos",
+        "cidade": "Parnamirim"
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Jose",
+      "cpf": "12345678920",
+      "email": "jose@teste.com",
+      "password": "102030",
+      "endereco": {
+        "cep": 13454000,
+        "rua": "Cabral sobrinho",
+        "numero": 785,
+        "bairro": "Rosa dos ventos",
+        "cidade": "Parnamirim"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+  .app {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "main main main";
+    grid-gap: 1rem;
+    grid-template-columns: auto auto auto;
+  }
+
+  .o-header {
+    grid-area: header;
+  }
+  
+
+  .o-main {
+    grid-area: main;
+  }
+  
+ 
+
+
+  

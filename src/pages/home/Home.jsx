@@ -1,4 +1,10 @@
 import React from 'react'
+import {Container} from './Style'
+import Header  from '../../components/header/Header'
+import Content from '../../components/content/Content'
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
+
+
 
 
 
@@ -6,7 +12,13 @@ import React from 'react'
 function Home() {
     return (
 
-        <div>Ola User</div>
+        <Container>
+            <BrowserRouter>
+                <Header/>
+                <Content/>
+            </BrowserRouter>         
+        </Container>
+           
     )
 }
 
