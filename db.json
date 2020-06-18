@@ -15,18 +15,16 @@
       }
     },
     {
-      "id": 2,
-      "nome": "Jose",
-      "cpf": "12345678920",
-      "email": "jose@teste.com",
-      "password": "102030",
+      "nome": "Jurema",
+      "cpf": "21589652145",
+      "email": "jurema@teste.com",
       "endereco": {
-        "cep": 13454000,
-        "rua": "Cabral sobrinho",
-        "numero": 785,
-        "bairro": "Rosa dos ventos",
+        "rua": "Rua Capitão César",
+        "bairro": "Centro",
         "cidade": "Parnamirim"
-      }
+      },
+      "password": "102030",
+      "id": 2
     }
   ]
 }

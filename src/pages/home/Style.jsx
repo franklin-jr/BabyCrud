@@ -13,14 +13,14 @@ export const Container = styled.div`
     
 `;
 
-export const Content = styled.main`
+export const Content = styled.div`
     background-color: #3bded0;
-    display: flex;
     flex: 1;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 80px;
+    padding: 85px 30px 30px 30px
+
     
 `;
 

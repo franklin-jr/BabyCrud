@@ -7,7 +7,8 @@ import {alertActions} from './alert_actions'
 export const userActions = {
     login,
     getUsers,
-    deleteUser
+    deleteUser,
+    insertUser
 };
 function loading(loading) { return { type: 'LOADING_STATUS', loading } }
 function login(email, password) {
@@ -63,6 +64,27 @@ function getUsers() {
 
 }
 
+
+
+function insertUser(data) {
+    return dispatch => {
+        dispatch(loading(true));
+        userService.insertUser(data).then(response => {
+            if(response.ok){
+                dispatch(alertActions.success('Usuário incluido com sucesso!'));
+                console.log('inserido com sucesso')
+                dispatch(getUsers())
+            } else {
+                console.log('Erro')
+            }
+        })
+    };
+
+}
+
+
+
+
 function deleteUser(id) {
     return dispatch => {
         dispatch(loading(true));
@@ -79,3 +101,10 @@ function deleteUser(id) {
     };
 
 }
+
+
+
+
+
+
+  

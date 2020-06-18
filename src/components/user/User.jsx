@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useDispatch } from 'react-redux'
 import { userActions } from '../../store/actions'
 import {Container, ContainerBlock, ContainerRow, ImgPerfil, ContainerPerfil, Title, ButtonRound} from './Style'
@@ -20,7 +20,7 @@ function User(props) {
                     
                     <Title color='#5188e2'>{props.user.nome}</Title>
                     <div> {props.user.email}</div>
-                    <div> {props.user.id}</div>
+                   
                 
             
                 </ContainerBlock>

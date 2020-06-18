@@ -17,7 +17,7 @@ function ListUser() {
     }, []);
     return (
      
-      <div>
+      <div >
         {loading ? <Loader  inverted size='massive' active inline='centered'/> : users.map(user => <div key={user.id}><User user={user}/></div>)}
         
       </div>

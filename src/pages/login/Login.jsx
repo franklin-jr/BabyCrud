@@ -89,7 +89,6 @@ function Login() {
                         style={{width: "250px"}}
                         iconPosition='left' 
                         placeholder='Email'
-                        value={inputs.email}
                         error={ errorEmail()}        
                         
                     >
@@ -107,7 +106,7 @@ function Login() {
                         error={errorPassword()}    
                     >
                         <Icon name='lock' />
-                        <input name='password' onKeyUp={() => {validPassword()}} value={inputs.password} onChange={handleChange}/>
+                        <input type='password' name='password' onKeyUp={() => {validPassword()}} value={inputs.password} onChange={handleChange}/>
                     </Form.Input>
 
                 

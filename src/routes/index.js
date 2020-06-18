@@ -20,10 +20,10 @@ function Routes () {
                     <Home>
                         <PrivateRoute isAuth={isAuth} component={({ match }) =>
                             <div>
-                                <Route exact path='/list' component={ListUser} />
+                                <Route exact path='/' component={ListUser} />
                                 <Route exact path='/caduser' component={CadUser} /> 
                             </div>
-                        }/>
+                        }/> 
                     </Home>
                     <Redirect from="*" to="/login" />
             </Switch>
