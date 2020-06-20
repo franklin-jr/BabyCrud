@@ -1,6 +1,6 @@
 
 
-## BabyCrud
+## BabyCrud - React
 
 # Aplicação em construção - desculpe o transtorno 
 
